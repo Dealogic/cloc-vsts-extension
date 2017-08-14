@@ -1,16 +1,29 @@
 import tl = require("vsts-task-lib/task");
+import downloadClocCli from "./clocCliDownloader";
+import executeClocCli from "./clocCli";
 
 async function run(): Promise<void> {
     let taskDisplayName = tl.getVariable("task.displayname");
 
     if (!taskDisplayName) {
-        taskDisplayName = "webpack";
+        taskDisplayName = "cloc";
     }
 
     console.log(taskDisplayName);
 
+    let workingFolder = tl.getPathInput("workingFolder", false);
+
+    if (!workingFolder) {
+        workingFolder = __dirname;
+    }
+
+    tl.cd(workingFolder);
+    process.chdir(workingFolder);
+
     try {
-        console.log("Hello, from VSTS build task.");
+        downloadClocCli(() => {
+            executeClocCli("");
+        });
     } catch (err) {
         tl.setResult(tl.TaskResult.Failed, `${taskDisplayName} failed`);
         tl.error(err);

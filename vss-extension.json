@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "cloc-vsts-extension",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "name": "cloc",
     "description": "counting lines of code",
     "publisher": "Dealogic",
