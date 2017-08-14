@@ -1,2 +1,10 @@
 node_modules
 dist
+tasks/**/*.js
+tasks/**/*.js.map
+**/npm-debug.log
+**/test-results.xml
+updateVersion.js
+updateVersion.js.map
+version.js
+version.js.map

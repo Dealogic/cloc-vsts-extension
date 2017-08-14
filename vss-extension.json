@@ -18,8 +18,7 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "screenshots": [
-    ],
+    "screenshots": [],
     "content": {
         "details": {
             "path": "DETAILS.md"

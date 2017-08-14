@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "node_modules": true,
+        "tasks/webpack-build-task/node_modules/**": true,
+        "tasks/**/*.js": true,
+        "tasks/**/*.js.map": true,
+        "version.js": true,
+        "version.js.map": true,
+        "updateVersion.js": true,
+        "updateVersion.js.map": true
+    },
+    "vsicons.presets.angular": false,
+    "typescript.tsdk": "./node_modules/typescript/lib"
+}
