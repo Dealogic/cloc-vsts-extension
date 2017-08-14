@@ -27,7 +27,9 @@ Source code can be found on [GitHub](https://github.com/Dealogic/cloc-vsts-exten
 
 ## <a id="what-the-build-step-does"></a>What The Build Step Does
 
-This build step is counting your lines of code with using the [cloc CLI](https://github.com/AlDanial/cloc).
+This build step is counting your lines of code with using the [cloc CLI](https://github.com/AlDanial/cloc). The result is reported as a section on the build summary page.
+
+![Result is reported on the build summary page]()
 
 ## <a id="usage"></a>Usage
 

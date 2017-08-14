@@ -18,7 +18,17 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "screenshots": [],
+    "screenshots": [
+        {
+            "path": "screenshots/BuildSummary.png"
+        },
+        {
+            "path": "screenshots/TaskList.png"
+        },
+        {
+            "path": "screenshots/AllSettings.png"
+        }
+    ],
     "content": {
         "details": {
             "path": "DETAILS.md"
