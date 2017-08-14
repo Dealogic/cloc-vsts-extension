@@ -13,7 +13,8 @@ const executeClocCli = (clocCliArguments: string) => {
         }
 
         console.log(stdout);
-        console.log(`##vso[task.addattachment type=Distributedtask.Core.Summary;name=Lines of Code;]${clocCliResultFilename}`);
+        console.log(`Uploading result file from ${path.resolve(__dirname, clocCliResultFilename)}`);
+        console.log(`##vso[task.addattachment type=Distributedtask.Core.Summary;name=Lines of Code;]${path.resolve(__dirname, clocCliResultFilename)}`);
     });
 };
 
