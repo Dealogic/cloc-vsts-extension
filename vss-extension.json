@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
     "id": "cloc-vsts-extension",
-    "version": "0.3.0",
-    "name": "cloc",
-    "description": "counting lines of code",
+    "version": "0.4.0",
+    "name": "Count Lines of Code",
+    "description": "Count Lines of Code with cloc CLI by Al Danial.",
     "publisher": "Dealogic",
     "public": false,
     "icons": {
@@ -29,21 +29,22 @@
     },
     "links": {
         "getstarted": {
-            "uri": "https://github.com/Dealogic/webpack-vsts-extension"
+            "uri": "https://github.com/Dealogic/cloc-vsts-extension"
         },
         "support": {
-            "uri": "https://github.com/Dealogic/webpack-vsts-extension/issues"
+            "uri": "https://github.com/Dealogic/cloc-vsts-extension/issues"
         },
         "repository": {
-            "uri": "https://github.com/Dealogic/webpack-vsts-extension"
+            "uri": "https://github.com/Dealogic/cloc-vsts-extension"
         },
         "issues": {
-            "uri": "https://github.com/Dealogic/webpack-vsts-extension/issues"
+            "uri": "https://github.com/Dealogic/cloc-vsts-extension/issues"
         }
     },
     "tags": [
         "cloc",
-        "build"
+        "build",
+        "count lines of code"
     ],
     "files": [
         {
