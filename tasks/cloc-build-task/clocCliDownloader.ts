@@ -9,7 +9,7 @@ const downloadClocCli = (downloadFinishedCallback: () => void) => {
 
     const clocExeFile = fs.createWriteStream(clocExeFilename);
 
-    console.log(`Downloading cloc.exe from '${clocExeDownloadUrl}' as '${clocExeFilename}'`);
+    console.log(`Downloading cloc.exe from '${clocExeDownloadUrl}'`);
     https.get(clocExeDownloadUrl, (clocExeDownloadResponse: https.IncomingMessage) => {
         https.get(clocExeDownloadResponse.headers["location"].toString(), (redirectionResponse: https.IncomingMessage) => {
             const stream = redirectionResponse.pipe(clocExeFile);

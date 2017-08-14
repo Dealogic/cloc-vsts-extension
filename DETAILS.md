@@ -31,11 +31,21 @@ This build step is counting your lines of code with using the [cloc CLI](https:/
 
 ## <a id="usage"></a>Usage
 
-TBA
+Add the task to your build configuration:
+
+![Add Count Line of Code task]()
+
+Arguments have to be specified:
+
+![Specify the arguments for the cloc CLI]()
+
+By default the cloc CLI is running in the root of the repository, you can modify that in the advanced settings as the working folder task parameter:
+
+![Working folder is the path, where the cloc CLI will run]()
 
 ## <a id="release-notes"></a>Release Notes
 
-* 1.0.0 (TBA)
+* 1.0.0 Counting lines of code with cloc CLI (14th August, 2017)
 
 ## <a id="license"></a>License
 
