@@ -47,7 +47,11 @@ By default the cloc CLI is running in the root of the repository, you can modify
 
 ## <a id="release-notes"></a>Release Notes
 
-* 1.0.0 Counting lines of code with cloc CLI (14th August, 2017)
+* 1.0.0 (14/08/2017)
+    * Counting lines of code with cloc CLI (by Al Danial)
+    * Result of the cloc CLI is reported onto the Build Summary page
+    * Custom arguments can be provided to the build task, to the cloc CLI
+    * Working folder can be modified where the cloc CLI will run
 
 ## <a id="license"></a>License
 
