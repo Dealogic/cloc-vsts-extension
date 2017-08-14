@@ -1,4 +1,4 @@
-# cloc build task
+# Count Lines of Code Build Task
 
 ### A build task for [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/fr-fr/products/visual-studio-team-services-vs.aspx) made with ♥ by
 
