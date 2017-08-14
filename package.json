@@ -1,0 +1,27 @@
+{
+  "name": "cloc-vsts-extension",
+  "version": "1.0.0",
+  "description": "cloc Visual Studio Team System (VTST) extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "VSTS",
+    "cloc",
+    "build"
+  ],
+  "author": "Dealogic",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "4.0.3",
+    "@types/mocha": "2.2.41",
+    "@types/node": "8.0.20",
+    "chai": "4.1.1",
+    "mocha": "3.5.0",
+    "mocha-junit-reporter": "1.13.0",
+    "tfx-cli": "0.4.9",
+    "tslint": "5.6.0",
+    "typescript": "2.4.2"
+  }
+}

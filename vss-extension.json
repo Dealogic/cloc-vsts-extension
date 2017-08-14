@@ -1,0 +1,66 @@
+{
+    "manifestVersion": 1,
+    "id": "cloc-vsts-extension",
+    "version": "1.0.0",
+    "name": "cloc",
+    "description": "counting lines of code",
+    "publisher": "Dealogic",
+    "public": false,
+    "icons": {
+        "default": "icon.png",
+        "large": "icon-large.png"
+    },
+    "categories": [
+        "Build and release"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "screenshots": [
+    ],
+    "content": {
+        "details": {
+            "path": "DETAILS.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/Dealogic/webpack-vsts-extension"
+        },
+        "support": {
+            "uri": "https://github.com/Dealogic/webpack-vsts-extension/issues"
+        },
+        "repository": {
+            "uri": "https://github.com/Dealogic/webpack-vsts-extension"
+        },
+        "issues": {
+            "uri": "https://github.com/Dealogic/webpack-vsts-extension/issues"
+        }
+    },
+    "tags": [
+        "cloc",
+        "build"
+    ],
+    "files": [
+        {
+            "path": "tasks/cloc-build-task"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "cloc",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tasks/cloc-build-task"
+            }
+        }
+    ]
+}

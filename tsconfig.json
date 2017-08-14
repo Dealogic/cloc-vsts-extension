@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "es6",
+        "sourceMap": true
+    },
+    "exclude": [
+        "node_modules",
+        "tasks/cloc-build-task/node_modules"
+    ]
+}
