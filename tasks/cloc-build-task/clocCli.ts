@@ -3,7 +3,7 @@ import * as path from "path";
 
 const executeClocCli = (clocCliArguments: string) => {
     const clocCliResultFilename = "cloc.result.md";
-    const commandToExecute = `cloc-1.72.exe ./mockCodeFiles ${clocCliArguments} --sum-one --md --out ${clocCliResultFilename}`;
+    const commandToExecute = `cloc-1.72.exe ${clocCliArguments} --sum-one --md --out ${clocCliResultFilename}`;
 
     console.log(`Executing command: ${commandToExecute}`);
 

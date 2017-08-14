@@ -20,9 +20,11 @@ async function run(): Promise<void> {
     tl.cd(workingFolder);
     process.chdir(workingFolder);
 
+    const clocCliArguments = tl.getInput("arguments", true);
+
     try {
         downloadClocCli(() => {
-            executeClocCli("");
+            executeClocCli(clocCliArguments);
         });
     } catch (err) {
         tl.setResult(tl.TaskResult.Failed, `${taskDisplayName} failed`);

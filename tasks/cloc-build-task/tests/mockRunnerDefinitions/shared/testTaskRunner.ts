@@ -16,9 +16,14 @@ const runTestTask = (testRunConfiguration: ITestRunConfiguration) => {
         testRunConfiguration.workingFolder = path.resolve(__dirname, "..", "..");
     }
 
+    if (!testRunConfiguration.clocCliArguments) {
+        testRunConfiguration.clocCliArguments = "./mockCodeFiles";
+    }
+
     const taskMockRunner = createTaskMockRunner();
 
     taskMockRunner.setInput("workingFolder", testRunConfiguration.workingFolder);
+    taskMockRunner.setInput("arguments", testRunConfiguration.clocCliArguments);
 
     taskMockRunner.run();
 };
