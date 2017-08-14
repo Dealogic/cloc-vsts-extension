@@ -9,7 +9,7 @@ async function run(): Promise<void> {
         taskDisplayName = "cloc";
     }
 
-    console.log(taskDisplayName);
+    console.log(`task display name: ${taskDisplayName}`);
 
     let workingFolder = tl.getPathInput("workingFolder", false);
 
@@ -17,10 +17,13 @@ async function run(): Promise<void> {
         workingFolder = __dirname;
     }
 
+    console.log(`working folder: ${workingFolder}`);
+
     tl.cd(workingFolder);
     process.chdir(workingFolder);
 
     const clocCliArguments = tl.getInput("arguments", true);
+    console.log(`arguments: ${clocCliArguments}`);
 
     try {
         downloadClocCli(() => {
