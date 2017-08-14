@@ -1,8 +1,9 @@
 import * as child_process from "child_process";
+import * as process from "process";
 import * as path from "path";
 
 const executeClocCli = (clocCliArguments: string) => {
-    const workingFolder = __dirname;
+    const workingFolder = process.cwd();
     const clocCliResultFilename = "cloc.result.md";
     const commandToExecute = `${path.resolve(workingFolder, "cloc-1.72.exe")} ${clocCliArguments} --sum-one --md --out ${clocCliResultFilename}`;
 
