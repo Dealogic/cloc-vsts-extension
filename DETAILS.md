@@ -29,21 +29,21 @@ Source code can be found on [GitHub](https://github.com/Dealogic/cloc-vsts-exten
 
 This build step is counting your lines of code with using the [cloc CLI](https://github.com/AlDanial/cloc). The result is reported as a section on the build summary page.
 
-![Result is reported on the build summary page]()
+![Result is reported on the build summary page](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/BuildSummary.png)
 
 ## <a id="usage"></a>Usage
 
 Add the task to your build configuration:
 
-![Add Count Line of Code task]()
+![Add Count Line of Code task](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/TaskList.png)
 
 Arguments have to be specified:
 
-![Specify the arguments for the cloc CLI]()
+![Specify the arguments for the cloc CLI](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/Arguments.png)
 
 By default the cloc CLI is running in the root of the repository, you can modify that in the advanced settings as the working folder task parameter:
 
-![Working folder is the path, where the cloc CLI will run]()
+![Working folder is the path, where the cloc CLI will run](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/WorkingFolder.png)
 
 ## <a id="release-notes"></a>Release Notes
 
