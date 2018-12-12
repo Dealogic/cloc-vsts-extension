@@ -1,5 +1,5 @@
 import * as path from "path";
-import { MockTestRunner } from "vsts-task-lib/mock-test";
+import { MockTestRunner } from "azure-pipelines-task-lib/mock-test";
 import { assert } from "chai";
 import * as fs from "fs";
 
@@ -13,8 +13,6 @@ export function executeTest(done: MochaDone): void {
         const testRunner = new MockTestRunner(testPath);
 
         testRunner.run();
-
-        console.log(testRunner.stdout);
 
         assert.isTrue(fs.existsSync("tests/cloc.result.md"));
         const clocResultMdFileContent = fs.readFileSync("tests/cloc.result.md", {

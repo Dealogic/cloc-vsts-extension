@@ -1,4 +1,4 @@
-import { TaskMockRunner } from "vsts-task-lib/mock-run";
+import { TaskMockRunner } from "azure-pipelines-task-lib/mock-run";
 import * as path from "path";
 
 const createTaskMockRunner = () => {

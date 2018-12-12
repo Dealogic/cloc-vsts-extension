@@ -1,4 +1,5 @@
 import * as https from "https";
+import * as http from "http";
 import * as fs from "fs";
 
 const downloadClocCli = (clocExeDownloadUrl: string, downloadFinishedCallback: () => void) => {
@@ -6,8 +7,8 @@ const downloadClocCli = (clocExeDownloadUrl: string, downloadFinishedCallback: (
     const clocExeFile = fs.createWriteStream(clocExeFilename);
 
     console.log(`Downloading cloc.exe from '${clocExeDownloadUrl}'`);
-    https.get(clocExeDownloadUrl, (clocExeDownloadResponse: https.IncomingMessage) => {
-        https.get(clocExeDownloadResponse.headers["location"].toString(), (redirectionResponse: https.IncomingMessage) => {
+    https.get(clocExeDownloadUrl, (clocExeDownloadResponse: http.IncomingMessage) => {
+        https.get(clocExeDownloadResponse.headers["location"].toString(), (redirectionResponse: http.IncomingMessage) => {
             const stream = redirectionResponse.pipe(clocExeFile);
             stream.on("close", () => {
                 downloadFinishedCallback();
