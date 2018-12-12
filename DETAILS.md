@@ -45,8 +45,14 @@ By default the cloc CLI is running in the root of the repository, you can modify
 
 ![Working folder is the path, where the cloc CLI will run](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/WorkingFolder.png)
 
+By default the cloc CLI is downloaded from the url: `https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe`:
+
+![The download URL of the cloc-cli tool](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/WorkingFolder.png)
+
 ## <a id="release-notes"></a>Release Notes
 
+* 1.1.0 (12/12/2018)
+    * Option to modify the cloc-cli download URL
 * 1.0.0 (14/08/2017)
     * Counting lines of code with cloc CLI (by Al Danial)
     * Result of the cloc CLI is reported onto the Build Summary page

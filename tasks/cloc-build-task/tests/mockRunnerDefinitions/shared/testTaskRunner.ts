@@ -16,6 +16,10 @@ const runTestTask = (testRunConfiguration: ITestRunConfiguration) => {
         testRunConfiguration.workingFolder = path.resolve(__dirname, "..", "..");
     }
 
+    if (!testRunConfiguration.clocCliDownloadUrl) {
+        testRunConfiguration.clocCliDownloadUrl = "https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe";
+    }
+
     if (!testRunConfiguration.clocCliArguments) {
         testRunConfiguration.clocCliArguments = "./mockCodeFiles";
     }
@@ -24,6 +28,7 @@ const runTestTask = (testRunConfiguration: ITestRunConfiguration) => {
 
     taskMockRunner.setInput("workingFolder", testRunConfiguration.workingFolder);
     taskMockRunner.setInput("arguments", testRunConfiguration.clocCliArguments);
+    taskMockRunner.setInput("clocCliDownloadUrl", testRunConfiguration.clocCliDownloadUrl);
 
     taskMockRunner.run();
 };

@@ -1,12 +1,8 @@
 import * as https from "https";
 import * as fs from "fs";
-import * as child_process from "child_process";
-import * as path from "path";
 
-const downloadClocCli = (downloadFinishedCallback: () => void) => {
-    const clocExeFilename = "cloc-1.72.exe";
-    const clocExeDownloadUrl = "https://github.com/AlDanial/cloc/releases/download/v1.72/cloc-1.72.exe";
-
+const downloadClocCli = (clocExeDownloadUrl: string, downloadFinishedCallback: () => void) => {
+    const clocExeFilename = "cloc.exe";
     const clocExeFile = fs.createWriteStream(clocExeFilename);
 
     console.log(`Downloading cloc.exe from '${clocExeDownloadUrl}'`);
