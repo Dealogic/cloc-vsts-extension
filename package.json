@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "yarn && cd tasks/cloc-build-task && yarn install",
-    "tslint": "tslint tasks/cloc-build-task/**/*.ts -e tasks/cloc-build-task/node_modules/**/*",
+    "tslint": "tslint 'tasks/cloc-build-task/**/*.ts' -e 'tasks/cloc-build-task/node_modules/**/*'",
     "build-without-setup": "tsc && yarn tslint",
     "build": "yarn setup && yarn build-without-setup",
     "release": "yarn build && node updateVersion.js && node node_modules/tfx-cli/_build/tfx-cli.js extension create --manifest-glob vss-extension.json --output-path ./dist",
