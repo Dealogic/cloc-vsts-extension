@@ -12,6 +12,7 @@ const downloadClocCli = (clocExeDownloadUrl: string, downloadFinishedCallback: (
             const stream = redirectionResponse.pipe(clocExeFile);
             stream.on("close", () => {
                 downloadFinishedCallback();
+                console.log(`Download is completed.`);
             });
         });
     });
