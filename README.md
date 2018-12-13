@@ -51,7 +51,7 @@ By default the cloc CLI is downloaded from the url: `https://github.com/AlDanial
 
 ## <a id="release-notes"></a>Release Notes
 
-* 1.2.0 (13/12/2018)
+* 1.1.2 (13/12/2018)
     * Display name of the task will be used as title for the summary on build summary page
     * Option to modify the cloc-cli download URL
 * 1.0.0 (14/08/2017)

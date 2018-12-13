@@ -1,6 +1,6 @@
 {
   "name": "cloc-build-task",
-  "version": "1.2.0",
+  "version": "1.1.2",
   "description": "cloc Visual Studio Team System (VTST) extension",
   "main": "index.js",
   "scripts": {},
