@@ -2,7 +2,7 @@ import * as child_process from "child_process";
 import * as process from "process";
 import * as path from "path";
 
-const executeClocCli = (clocCliArguments: string) => {
+const executeClocCli = (taskDisplayName: string, clocCliArguments: string) => {
     const clocCliResultFilename = "cloc.result.md";
     const commandToExecute = `cloc.exe ${clocCliArguments} --sum-one --md --out ${clocCliResultFilename}`;
 
@@ -18,7 +18,7 @@ const executeClocCli = (clocCliArguments: string) => {
         const workingFolder = process.cwd();
 
         console.log(`Uploading result file from ${path.resolve(workingFolder, clocCliResultFilename)}`);
-        console.log(`##vso[task.addattachment type=Distributedtask.Core.Summary;name=Lines of Code;]${path.resolve(workingFolder, clocCliResultFilename)}`);
+        console.log(`##vso[task.addattachment type=Distributedtask.Core.Summary;name=${taskDisplayName};]${path.resolve(workingFolder, clocCliResultFilename)}`);
     });
 };
 
