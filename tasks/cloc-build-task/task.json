@@ -17,7 +17,7 @@
     "version": {
         "Major": 1,
         "Minor": 1,
-        "Patch": 0
+        "Patch": 1
     },
     "minimumAgentVersion": "1.95.0",
     "groups": [
@@ -44,7 +44,8 @@
             "label": "Download url of cloc-cli",
             "defaultValue": "https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe",
             "required": true,
-            "helpMarkDown": "Download URL of cloc-cli. Default value: https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe"
+            "helpMarkDown": "Download URL of cloc-cli. Default value: https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe",
+            "groupName": "advanced"
         },
         {
             "name": "arguments",
