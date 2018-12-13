@@ -4,7 +4,7 @@ import * as shouldProduceClocResultMdFile from "./shouldProduceClocResultMdFile"
 describe("cloc build task", () => {
     after((done: MochaDone) => {
         const filesToDelete = [
-            "tests/cloc-1.72.exe",
+            "tests/cloc.exe",
             "tests/cloc.result.md"
         ];
 
