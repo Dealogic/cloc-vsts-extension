@@ -8,7 +8,7 @@
     "tslint": "tslint 'tasks/cloc-build-task/**/*.ts' -e 'tasks/cloc-build-task/node_modules/**/*'",
     "build-without-setup": "tsc && yarn tslint",
     "build": "yarn setup && yarn build-without-setup",
-    "release": "yarn build && node updateVersion.js && node node_modules/tfx-cli/_build/tfx-cli.js extension create --manifest-glob vss-extension.json --output-path ./dist",
+    "release": "yarn build && node updateVersion.js && node node_modules/tfx-cli/_build/tfx-cli.js extension create --manifest-glob vss-extension.json --output-path ./dist/cloc-vsts-extension.vsix",
     "test-reporter": "cd tasks/cloc-build-task && mocha tests/suite.js --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml",
     "test": "yarn build-without-setup && cd tasks/cloc-build-task && mocha tests/suite.js"
   },
