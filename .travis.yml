@@ -2,6 +2,8 @@ os: windows
 language: node_js
 node_js:
   "8"
+env:
+  - YARN_GPG=no
 install:
   yarn release
 script:
@@ -12,8 +14,3 @@ deploy:
   script: node node_modules/tfx-cli/_build/tfx-cli.js extension publish --vsix *.vsix --token $VS_TOKEN
   on:
     branch: master
-
-script:
-  # Workaround for bug that on Windows machine after running tests there is no proper exit signal
-  - travis_terminate 0
-  
