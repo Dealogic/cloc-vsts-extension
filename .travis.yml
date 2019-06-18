@@ -5,4 +5,5 @@ node_js:
 install:
   yarn release
 script:
-  yarn test
+  - yarn test
+  - IF $TRAVIS_BRANCH == "master" node node_modules/tfx-cli/_build/tfx-cli.js extension publish --vsix *.vsix --token $VS_TOKEN
