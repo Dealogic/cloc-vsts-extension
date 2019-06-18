@@ -8,8 +8,7 @@ env:
 install:
   yarn release
 script:
-  # - yarn test
-  - dir ./dist
+  - yarn test
 
 deploy:
   skip_cleanup: true
