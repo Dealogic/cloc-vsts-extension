@@ -6,7 +6,7 @@ async function run(): Promise<void> {
     let taskDisplayName = tl.getVariable("task.displayname");
 
     if (!taskDisplayName) {
-        taskDisplayName = "cloc";
+        taskDisplayName = "Lines of Code";
     }
 
     console.log(`task display name: ${taskDisplayName}`);
@@ -32,7 +32,7 @@ async function run(): Promise<void> {
         downloadClocCli(
             clocCliDownloadUrl,
             () => {
-                executeClocCli(clocCliArguments);
+                executeClocCli(taskDisplayName, clocCliArguments);
             });
     } catch (err) {
         tl.setResult(tl.TaskResult.Failed, `${taskDisplayName} failed`);
