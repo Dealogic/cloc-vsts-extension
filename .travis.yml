@@ -6,4 +6,9 @@ install:
   yarn release
 script:
   - yarn test
-  - IF $TRAVIS_BRANCH == "master" node node_modules/tfx-cli/_build/tfx-cli.js extension publish --vsix *.vsix --token $VS_TOKEN
+
+deploy:
+  provider: script
+  script: node node_modules/tfx-cli/_build/tfx-cli.js extension publish --vsix *.vsix --token $VS_TOKEN
+  on:
+    branch: master
