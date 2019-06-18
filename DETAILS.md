@@ -6,7 +6,7 @@
 
 ### to count your lines of code.
 
-![build status](https://dealogic.visualstudio.com/DefaultCollection/_apis/public/build/definitions/4cd19643-db3a-4dcc-b481-76a7800dd64d/9867/badge)
+![build status](https://travis-ci.org/Dealogic/cloc-vsts-extension.svg?branch=master)
 
 ## Content
 
@@ -51,6 +51,8 @@ By default the cloc CLI is downloaded from the url: `https://github.com/AlDanial
 
 ## <a id="release-notes"></a>Release Notes
 
+* 1.2.0 (18/06/2019)
+    * New build/deployment badge on README page. (as build and deployment are on travis-ci.org)
 * 1.1.2 (13/12/2018)
     * Display name of the task will be used as title for the summary on build summary page
     * Option to modify the cloc-cli download URL
