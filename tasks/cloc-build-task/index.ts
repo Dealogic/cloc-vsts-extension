@@ -31,7 +31,11 @@ async function run(): Promise<void> {
     try {
         downloadClocCli(
             clocCliDownloadUrl,
-            () => {
+            (error) => {
+                if (error) {
+                    throw error;
+                }
+
                 executeClocCli(taskDisplayName, clocCliArguments);
             });
     } catch (err) {

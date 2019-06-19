@@ -10,7 +10,7 @@ export function executeTest(done: MochaDone): void {
     // tslint:disable-next-line:no-invalid-this
     this.timeout(30000);
 
-    const testPath = path.join(__dirname, mockRunnerDefinitions, "shouldProduceClocResultMdFile.js");
+    const testPath = path.join(__dirname, mockRunnerDefinitions, "shouldWorkWithLocalCloc.js");
     const testRunner = new MockTestRunner(testPath);
 
     testRunner.run();

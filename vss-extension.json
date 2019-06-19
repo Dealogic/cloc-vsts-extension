@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "cloc-vsts-extension",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "name": "Count Lines of Code",
     "description": "Count Lines of Code with cloc CLI by Al Danial.",
     "publisher": "Dealogic",

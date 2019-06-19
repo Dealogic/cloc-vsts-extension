@@ -16,7 +16,7 @@ const runTestTask = (testRunConfiguration: ITestRunConfiguration) => {
     }
 
     if (!testRunConfiguration.clocCliDownloadUrl) {
-        testRunConfiguration.clocCliDownloadUrl = "https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe";
+        testRunConfiguration.clocCliDownloadUrl = "https://github.com/AlDanial/cloc/releases/download/1.82/cloc-1.82.exe";
     }
 
     if (!testRunConfiguration.clocCliArguments) {

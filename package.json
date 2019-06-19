@@ -1,6 +1,6 @@
 {
   "name": "cloc-vsts-extension",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "cloc Visual Studio Team System (VTST) extension",
   "main": "index.js",
   "scripts": {
