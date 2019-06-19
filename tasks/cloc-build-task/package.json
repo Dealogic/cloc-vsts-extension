@@ -1,6 +1,6 @@
 {
   "name": "cloc-build-task",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "cloc Visual Studio Team System (VTST) extension",
   "main": "index.js",
   "scripts": {},
@@ -12,7 +12,10 @@
   "author": "Dealogic",
   "license": "MIT",
   "dependencies": {
-    "azure-pipelines-task-lib": "2.7.7"
+    "azure-pipelines-task-lib": "2.7.7",
+    "download": "7.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/download": "6.2.4"
+  }
 }

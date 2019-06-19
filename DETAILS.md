@@ -45,14 +45,24 @@ By default the cloc CLI is running in the root of the repository, you can modify
 
 ![Working folder is the path, where the cloc CLI will run](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/WorkingFolder.png)
 
-By default the cloc CLI is downloaded from the url: `https://github.com/AlDanial/cloc/releases/download/1.80/cloc-1.80.exe`:
+By default the cloc CLI is downloaded from the url: `https://github.com/AlDanial/cloc/releases/download/1.82/cloc-1.82.exe`:
 
 ![The download URL of the cloc-cli tool](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/ClocCliDownloadURL.png)
 
+But now file shares and local files are supported to such as:
+```
+file://my-file-share/public/software/cloc-1.82.exe
+```
+or
+```
+./cloc.1.82.exe
+```
+
 ## <a id="release-notes"></a>Release Notes
 
-* 1.2.0 (18/06/2019)
+* 1.2.1 (19/06/2019)
     * New build/deployment badge on README page. (as build and deployment are on travis-ci.org)
+    * File URLs are supported such as `file://my-file-share/public/software/cloc-1.82.exe` or local file path as `./cloc.1.82.exe`
 * 1.1.2 (13/12/2018)
     * Display name of the task will be used as title for the summary on build summary page
     * Option to modify the cloc-cli download URL
