@@ -41,6 +41,8 @@ Arguments have to be specified:
 
 ![Specify the arguments for the cloc CLI](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/Arguments.png)
 
+For the simple case of using an Azure Repo, you need only specify the argument `--vcs git`.  
+
 By default the cloc CLI is running in the root of the repository, you can modify that in the advanced settings as the working folder task parameter:
 
 ![Working folder is the path, where the cloc CLI will run](https://raw.githubusercontent.com/Dealogic/cloc-vsts-extension/master/screenshots/WorkingFolder.png)
